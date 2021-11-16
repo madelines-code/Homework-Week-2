@@ -20,7 +20,8 @@ class NotesController < ApplicationController
   end
 
   def show
-    Note.find(params[:id])
+    @note = Note.find(params[:id])
+    render component: "singleNote", props: {note: @note}
   end
 
     

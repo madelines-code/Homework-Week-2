@@ -13,6 +13,7 @@ const Notes = (props) => {
         <div>
           <h1>{note.title}</h1>
           <p>{note.description}</p>
+          <a href = {`/notes/${note.id}`}>View This Note</a>
         </div>
       );
     });
